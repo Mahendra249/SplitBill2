@@ -1,0 +1,123 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  padding: 12px;
+}
+.home-container h3 {
+  background-color: var(--secondary-color);
+  width: 85%;
+  color: var(--text-color);
+  padding: 7px;
+  font-size: 23px;
+}
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  width: 85%;
+  min-height: 90vh;
+  gap: 20px;
+  padding: 20px;
+}
+.friendsData,
+.billingpage {
+  background-color: var(--primary-color);
+}
+.friendsData {
+  width: 34%;
+}
+.billingpage {
+  width: 65%;
+}
+.friendsData h4,
+.billingpage h4 {
+  background-color: var(--secondary-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  padding: 7px 12px;
+  font-size: 19px;
+}
+.name-details {
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  height: 70vh;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.name-details::-webkit-scrollbar {
+  display: none;
+}
+.addbtn {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+}
+.addbtn button {
+  background-color: rgb(6, 195, 6);
+  flex-shrink: 0;
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.addfriends-box {
+  padding: 8px;
+}
+
+@media (max-width: 1200px) {
+  .friendsData {
+    width: 44%;
+  }
+  .billingpage {
+    width: 55%;
+  }
+}
+
+@media (max-width: 850px) {
+  .friendsData {
+    width: 49%;
+  }
+  .billingpage {
+    width: 51%;
+  }
+}
+@media (max-width: 800px) {
+  .billingpage.billclose {
+    display: none;
+  }
+  .billingpage.billopen {
+    width: 100%;
+    height: 87vh;
+  }
+  .friendsData.friendclose {
+    display: none;
+  }
+  .friendsData.friendopen {
+    width: 100%;
+    height: 87vh;
+  }
+  .home-section {
+    width: 100%;
+    min-height: 94vh;
+  }
+  .home-container h3 {
+    width: 100%;
+  }
+  .home-container {
+    padding: 0;
+  }
+  .name-details {
+    height: 70vh;
+  }
+}

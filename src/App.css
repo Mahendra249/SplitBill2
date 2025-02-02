@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+  {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+  --primary-color: antiquewhite; 
+  --secondary-color: rgba(255, 0, 0, 0.507);  
+  --bg-color: rgb(251, 225, 191); 
+  --text-color: antiquewhite; 
+}

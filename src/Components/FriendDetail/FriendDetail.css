@@ -1,0 +1,72 @@
+.friend-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgba(192, 44, 44, 0.062);
+}
+
+.img {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nametitle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nametitle p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nametitle span {
+  font-size: 14px;
+}
+
+.text-green {
+  color: rgb(0, 198, 0);
+}
+.text-red {
+  color: red;
+}
+.text-default {
+  color: #2f2f2f;
+}
+
+.selectbtn {
+ 
+  padding: 8px 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
+.dlticon{
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 23px;
+}
+.dlticon svg{
+  color: red;
+}
+

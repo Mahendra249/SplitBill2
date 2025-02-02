@@ -1,0 +1,88 @@
+.add-friend-form {
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  background-color: var(--bg-color);
+}
+
+.add-friend-form h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #25d366;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #20ba59;
+}
+
+.suggestions {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8px;
+  gap: 12px;
+  overflow-y: auto;
+  max-height: 180px;
+  padding: 8px;
+}
+.suggestions::-webkit-scrollbar{
+  display: none;
+}
+.suggestions p {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.suggestion-item {
+  cursor: pointer;
+  width: 20%;
+}
+.suggestion-item img {
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+@media (max-width:750px) {
+    .add-friend-form{
+      border: none;
+      background-color: transparent;
+    }
+}
